@@ -1,7 +1,10 @@
 
 <app-header></app-header>
-<app-first-section></app-first-section>
+<app-first-section id="home"></app-first-section>
 <app-my-skills id="mySkills"></app-my-skills>
+<app-my-work id="portfolio"></app-my-work>
+<app-about-me id="about"></app-about-me>
+<app-contact></app-contact>
 
 <div class="slideshow-container">
     <img *ngIf="showImage" class="img-slideshow" src="../assets/img/{{ images[currentImage] }}" alt="">
