@@ -33,19 +33,19 @@
         </span>
 
 
-        <form action="#" onsubmit="sendmail()">
+        <form action="http://dominic-gerth.developerakademie.net/send_mail.php" method="POST">
             <div class="formPart">
-                <label>Name</label> <input required type="text" placeholder="Enter your name">
+                <label>Name</label> <input name="name" required type="text" placeholder="Enter your name">
             </div>
             <div class="formPart">
                 <label>Email address</label>
-                <input required type="email" placeholder="Enter your Email address">
+                <input name="mail" required type="email" placeholder="Enter your Email address">
             </div>
             <div class="formPart">
                 <label>Message</label>
-                <textarea required placeholder="Enter your message" name="" id="" cols="30" rows="10"></textarea>
+                <textarea name="message" required placeholder="Enter your message" cols="30" rows="10"></textarea>
             </div>
-            <button>Send</button>
+            <button type="submit">Send</button>
         </form>
     </div>
 </div>

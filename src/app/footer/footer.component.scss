@@ -1,0 +1,26 @@
+footer{
+    padding: 54px 10% 54px 10%;
+    color: #2dfcd8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a{
+        color: #2dfcd8;
+        text-decoration: none;
+        font-weight: 400;
+        transition: all 150ms ease-in-out;
+        &:hover{
+            color: #FA2759;
+        }
+        img{
+            height: 54px;
+            cursor: pointer;
+        }
+    }
+}
+
+.jobLinks{
+    a{
+        margin-left: 54px;
+    }
+}
