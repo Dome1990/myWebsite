@@ -2,6 +2,12 @@
 
     <h2>My work</h2>
 
+    <div class="selectionBar">
+        <div (click)="select('all')" class="selectBtn">All</div>
+        <div (click)="select('angular')" class="selectBtn">Angular</div>
+        <div (click)="select('javascript')" class="selectBtn">Java Script</div>
+    </div>
+
     <div *ngIf="javascript" class="project">
         <img src="../../assets/img/projectImg/elpolloloco.png">
         <div class="projectDescritpion">

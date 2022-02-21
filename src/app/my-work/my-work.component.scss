@@ -7,6 +7,29 @@
     padding: 0 10% 55px 10%;
 }
 
+.selectionBar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.selectBtn{
+    border-style: solid;
+    border-color: #fa2759;
+    border-width: 1px;
+    font-weight: 600;
+    color: #fa2759;
+    padding: 8px 12px 8px 12px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 255ms;
+    margin-right: 12px;
+    &:hover{
+        color: white;
+        background-color: #fa2759;
+    }
+}
+
 .project {
     height: 350px;
     width: 350px;
