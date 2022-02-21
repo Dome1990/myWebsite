@@ -9,6 +9,12 @@ export class MyWorkComponent implements OnInit {
 
   constructor() { }
 
+  javascript = true;
+
+  goToLink(url: string){
+    window.open(url, "_blank");
+}
+
   ngOnInit(): void {
   }
 

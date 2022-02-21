@@ -1,5 +1,13 @@
 <div class="myWork">
-<h2>My work</h2>
 
+    <h2>My work</h2>
+
+    <div *ngIf="javascript" class="project">
+        <img src="../../assets/img/projectImg/elpolloloco.png">
+        <div class="projectDescritpion">
+            <span>El Pollo Loco</span> <br> JavaScript -based jump and run.
+            <div (click)="goToLink('http://www.google.com')" class="tryOut">Try out</div>
+        </div>
+    </div>
 
 </div>
