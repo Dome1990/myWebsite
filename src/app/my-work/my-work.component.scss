@@ -24,10 +24,15 @@
     cursor: pointer;
     transition: all 255ms;
     margin-right: 12px;
-    &:hover{
+    // &:hover{
+    //     color: white;
+    //     background-color: #fa2759;
+    // }
+}
+
+.selected{
         color: white;
         background-color: #fa2759;
-    }
 }
 
 .project {

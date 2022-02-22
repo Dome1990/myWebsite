@@ -3,9 +3,9 @@
     <h2>My work</h2>
 
     <div class="selectionBar">
-        <div (click)="select('all')" class="selectBtn">All</div>
-        <div (click)="select('angular')" class="selectBtn">Angular</div>
-        <div (click)="select('javascript')" class="selectBtn">Java Script</div>
+        <div (click)="select('all')" [ngClass]="{'selected' : angular && javascript}" class="selectBtn">All</div>
+        <div (click)="select('angular')" [ngClass]="{'selected' : angular && !javascript}" class="selectBtn">Angular</div>
+        <div (click)="select('javascript')" [ngClass]="{'selected' : javascript && !angular}" class="selectBtn">Java Script</div>
     </div>
 
     <div *ngIf="javascript" class="project">
