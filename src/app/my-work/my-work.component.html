@@ -4,16 +4,34 @@
 
     <div class="selectionBar">
         <div (click)="select('all')" [ngClass]="{'selected' : angular && javascript}" class="selectBtn">All</div>
-        <div (click)="select('angular')" [ngClass]="{'selected' : angular && !javascript}" class="selectBtn">Angular</div>
-        <div (click)="select('javascript')" [ngClass]="{'selected' : javascript && !angular}" class="selectBtn">Java Script</div>
-    </div>
-
-    <div *ngIf="javascript" class="project">
-        <img src="../../assets/img/projectImg/elpolloloco.png">
-        <div class="projectDescritpion">
-            <span>El Pollo Loco</span> <br> JavaScript -based jump and run.
-            <div (click)="goToLink('http://www.google.com')" class="tryOut">Try out</div>
+        <div (click)="select('angular')" [ngClass]="{'selected' : angular && !javascript}" class="selectBtn">Angular
         </div>
+        <div (click)="select('javascript')" [ngClass]="{'selected' : javascript && !angular}" class="selectBtn">Java
+            Script</div>
     </div>
+    <div class="projects">
+        <!-- <div *ngIf="javascript" class="project">
+            <img src="../../assets/img/projectImg/elpolloloco.png">
+            <div class="projectDescritpion">
+                <span>El Pollo Loco</span> <br> JavaScript -based jump and run.
+                <div (click)="goToLink('http://www.google.com')" class="tryOut">Try out</div>
+            </div>
+        </div> -->
 
+        <!-- *ngIf="javascript" -->
+        <div *ngFor="let c of javascriptProject; let i = index;">
+            <div *ngIf="javascript" class="project">
+                <img src="{{ javascriptProject[i].imgPath }}">
+                <div class="projectDescritpion">
+                    <span>{{ javascriptProject[i].name }}</span> <br> {{ javascriptProject[0].text }}
+                    <div (click)="goToLink(javascriptProject[i].projectLink)" class="tryOut">Try out</div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
 </div>

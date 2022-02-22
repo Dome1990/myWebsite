@@ -4,13 +4,17 @@
     max-width: 100%;
     background-color: black;
     box-sizing: border-box;
-    padding: 0 10% 55px 10%;
+    padding: 55px 10% 55px 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .selectionBar{
     width: 100%;
     display: flex;
     justify-content: center;
+    margin: 50px 0 50px 0;
 }
 
 .selectBtn{
@@ -24,15 +28,18 @@
     cursor: pointer;
     transition: all 255ms;
     margin-right: 12px;
-    // &:hover{
-    //     color: white;
-    //     background-color: #fa2759;
-    // }
 }
 
 .selected{
         color: white;
         background-color: #fa2759;
+}
+
+.projects{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 16px;
 }
 
 .project {
