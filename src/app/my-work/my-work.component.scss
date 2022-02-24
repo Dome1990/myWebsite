@@ -48,6 +48,7 @@
     overflow: hidden;
     position: relative;
     display: flex;
+    margin: 24px;
     &:hover {
         .projectDescritpion{
         animation: showInfo 255ms;
@@ -103,5 +104,14 @@
     &:hover{
         color: white;
         background-color: #fa2759;
+    }
+}
+
+
+@media (max-width: 920px){
+    .projects{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
