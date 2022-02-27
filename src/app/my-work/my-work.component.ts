@@ -52,7 +52,6 @@ export class MyWorkComponent implements OnInit {
   //         text: 'JavaScript -based jump and run.',
   //         imgPath: '../../assets/img/projectImg/elpolloloco.png',
   //         projectLink: 'http://www.google.com',
-  //       }
   //     ],
   //     angular: [
 
