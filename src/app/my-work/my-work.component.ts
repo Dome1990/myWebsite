@@ -16,21 +16,21 @@ export class MyWorkComponent implements OnInit {
     name : 'El Pollo Loco',
     text : 'JavaScript -based jump and run.',
     imgPath : '../../assets/img/projectImg/elpolloloco.png',
-    projectLink : 'http://www.google.com',
+    projectLink : 'https://dominic-gerth.com/ElPolloLoco/',
   },
   {
     language : 'javascript',
     name : 'JOIN',
     text : 'An Kanban Board app',
     imgPath : '../../assets/img/projectImg/join.png',
-    projectLink : 'http://www.google.com',
+    projectLink : 'https://dominic-gerth.com/join/addTask.html',
   },
   {
     language : 'javascript',
     name : 'Pokedex',
     text : 'A Pokedex build with RESTful API',
     imgPath : '../../assets/img/projectImg/pokedex.png',
-    projectLink : 'http://www.google.com',
+    projectLink : 'https://dominic-gerth.com/pokedex/',
   }
   ]
 
@@ -40,7 +40,7 @@ export class MyWorkComponent implements OnInit {
       name : 'This Website',
       text : '- made with Angular',
       imgPath : '../../assets/img/projectImg/myWebsite.png',
-      projectLink : 'http://www.google.com',
+      projectLink : 'https://dominic-gerth.com/',
     }
   ]
 

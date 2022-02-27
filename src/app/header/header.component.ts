@@ -7,8 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+
+
   constructor() { }
 
+  resp = false;
+
+openCloseLinks(){
+  if(this.resp == false){
+    this.resp = true;
+  }
+  else{
+    this.resp = false;
+  }
+}
   ngOnInit(): void {
   }
 
