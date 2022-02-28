@@ -1,9 +1,9 @@
 <header>
-    <img src="../../assets/img/logo.png" alt="">
+    <a class="homeImgLink" href="/#home"><img src="../../assets/img/logo.png" alt=""></a>
     <div class="links">
-        <a href="#home">HOME</a>
-        <a href="#about">ABOUT</a>
-        <a href="#portfolio">PORTFOLIO</a>
+        <a href="/#home">HOME</a>
+        <a href="/#about">ABOUT</a>
+        <a href="/#portfolio">PORTFOLIO</a>
     </div>
 
     <div class="respMenu">
@@ -14,9 +14,9 @@
 
         </div>
         <div *ngIf="resp" class="linkbox">
-            <a href="#home">HOME</a>
-            <a href="#about">ABOUT</a>
-            <a href="#portfolio">PORTFOLIO</a>
+            <a (click)="openCloseLinks()" href="/#home">HOME</a>
+            <a (click)="openCloseLinks()" href="/#about">ABOUT</a>
+            <a (click)="openCloseLinks()" href="/#portfolio">PORTFOLIO</a>
         </div>
     </div>
 

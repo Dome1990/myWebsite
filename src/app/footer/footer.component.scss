@@ -1,26 +1,57 @@
-footer{
+footer {
     padding: 54px 10% 54px 10%;
     color: #2dfcd8;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    a{
+    a {
         color: #2dfcd8;
         text-decoration: none;
         font-weight: 400;
         transition: all 150ms ease-in-out;
-        &:hover{
-            color: #FA2759;
+        &:hover {
+            color: #fa2759;
         }
-        img{
+        img {
             height: 54px;
             cursor: pointer;
         }
     }
 }
 
-.jobLinks{
-    a{
+.jobLinks {
+    a {
         margin-left: 54px;
+    }
+}
+
+@media (max-width: 600px) {
+    footer {
+        flex-direction: column !important;
+        height: 110px;
+    }
+    .jobLinks {
+        width: 100%;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+@media (max-width: 410px) {
+    .jobLinks {
+        width: 100%;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        a {
+            margin: 0;
+        }
+        img {
+            height: 40px !important;
+            width: 40px;
+        }
     }
 }

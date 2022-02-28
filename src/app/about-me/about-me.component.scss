@@ -1,4 +1,4 @@
-.aboutMeSection{
+.aboutMeSection {
     width: 100vw;
     max-width: 100%;
     min-height: 100vh;
@@ -10,59 +10,60 @@
     padding-top: 54px;
     box-sizing: border-box;
 }
-.imgDiv{
+.imgDiv {
     width: 250px;
     height: 250px;
     overflow: hidden;
     border-radius: 50%;
     margin-right: 6px;
-    img{
+    img {
         width: 250px;
         position: relative;
         top: -7px;
     }
 }
-span{
+span {
     color: white;
 }
 
-.aboutMeTop{
- display: flex;
- justify-content: space-evenly;
- height: 55vh;
- border-bottom-style: solid;
- border-bottom-width: 2px;
- border-bottom-color: #2dfcd8;
- h2{
-     margin-bottom: 40px;
- }
- .aboutDescription{
+.aboutMeTop {
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 60%;
-}
+    justify-content: space-evenly;
+    min-height: 55vh;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: #2dfcd8;
+    h2 {
+        margin-bottom: 40px;
+    }
+    .aboutDescription {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 60%;
+    }
 }
 
-.motivation{
+.motivation {
     display: flex;
     margin-top: 64px;
     margin-bottom: 64px;
     justify-content: space-between;
 }
 
-.aboutMeDetail{
+.aboutMeDetail {
     display: flex;
     flex-direction: column;
     width: 20%;
     //padding: 6px;
     align-items: center;
     text-align: center;
-    .topic{
+    .topic {
         margin-bottom: 24px;
         margin-top: 24px;
+        font-size: 22px;
     }
-    img{
+    img {
         background-color: #2dfcd8;
         border-radius: 50%;
         padding: 20px;
@@ -71,3 +72,50 @@ span{
     }
 }
 
+@media (max-width: 1180px) {
+    @media (min-height: 660px) {
+        .aboutMeTop {
+            min-height: fit-content;
+            padding-bottom: 54px;
+        }
+    }
+    @media (max-height:500px) {
+        .aboutMeTop{
+            min-height: fit-content;
+            padding-bottom: 50px;
+        }
+        
+    }
+}
+
+@media (max-width: 940px) {
+    .imgDiv {
+        margin-bottom: 32px;
+    }
+    .aboutMeTop {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 24px;
+        width: 100%;
+    }
+    .aboutDescription {
+        width: 100% !important;
+    }
+    .motivation {
+        flex-direction: column;
+    }
+    .aboutMeDetail {
+        width: 100%;
+        padding-bottom: 32px;
+    }
+}
+
+@media (max-width: 490px) {
+    .imgDiv {
+        width: 230px;
+        height: 230px;
+        img {
+            width: 230px;
+        }
+    }
+}

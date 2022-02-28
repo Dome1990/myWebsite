@@ -24,6 +24,13 @@ p {
     font-size: 18px;
 }
 
+
+@media (max-width: 870px){
+    h1{
+        font-size: 56px;
+    }
+}
+
 @media (max-width: 730px) {
     h1 {
         font-size: 46px !important;
@@ -38,6 +45,6 @@ p {
 
 @media (max-width: 490px) {
     h1 {
-        font-size: 25px !important;
+        font-size: 30px !important;
     }
 }
