@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -12,16 +12,30 @@ export class HeaderComponent implements OnInit {
   constructor() { }
 
   resp = false;
+  lastY = 0;
+  scrollDown = true;
 
-openCloseLinks(){
-  if(this.resp == false){
-    this.resp = true;
+  @HostListener('window:scroll', ['$event'])
+  onScroll(){
+    if(window.pageYOffset > this.lastY){
+      console.log('scrolldown');
+      this.scrollDown = true;
+    }
+    else if(window.pageYOffset < this.lastY){
+      this.scrollDown = false;
+    }
+    this.lastY = window.pageYOffset;
   }
-  else{
-    this.resp = false;
+
+  openCloseLinks() {
+    if (this.resp == false) {
+      this.resp = true;
+    }
+    else {
+      this.resp = false;
+    }
   }
-}
   ngOnInit(): void {
+    this.lastY = window.pageYOffset;
   }
-
 }

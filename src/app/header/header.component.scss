@@ -9,9 +9,10 @@ header{
     justify-content: space-between;
     height: 60px;
     color: white;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 1;
+    animation: showNav 255ms ease-in-out;
     img{
         height: 50px;
         background-color: transparent;
@@ -27,8 +28,7 @@ header{
             color: #FA2759;
         }
     }
-
-
+    
     .homeImgLink{
         margin: 0;
     }
@@ -53,12 +53,21 @@ header{
         animation: openLinks 255ms forwards;
     }
 
-    @keyframes openLinks {
+    @keyframes showNav {
         from{
-            transform: scaleY(0);
+            transform: translateY(-100%);
         }
         to{
-            transform: scaleY(1);
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes openLinks {
+        from{
+            transform: translateY(-50%);
+        }
+        to{
+            transform: translateY(0);
         }
     }
 
