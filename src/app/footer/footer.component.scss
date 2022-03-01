@@ -27,8 +27,8 @@ footer {
 
 @media (max-width: 600px) {
     footer {
-        flex-direction: column !important;
-        height: 110px;
+        flex-direction: column-reverse !important;
+        height: 90px;
     }
     .jobLinks {
         width: 100%;
@@ -36,10 +36,20 @@ footer {
         display: flex;
         flex-direction: row;
         align-items: center;
+        a{
+            margin: 0;
+        }
     }
 }
 
 @media (max-width: 410px) {
+    footer{
+        height: 70px;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
     .jobLinks {
         width: 100%;
         justify-content: space-between;
