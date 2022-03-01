@@ -11,13 +11,9 @@
     padding-top: 54px;
     box-sizing: border-box;
     img {
-        //height: 250px;
         width: 250px;
         position: relative;
         top: -7px;
-        //object-fit: cover;
-        //border-radius: 100%;
-        //transform: scale(1.5)
     }
     h1 {
         margin: 0;
@@ -79,13 +75,17 @@
 @media (max-width: 1190px) {
     @media (max-height: 650px) {
         .firstSection {
-            min-height: 120vh !important;
+            min-height: 140vh !important;
+            padding-top: 100px;
             button {
                 margin-top: 80px !important;
             }
         }
         .nextSection {
-            bottom: -10vh !important;
+            bottom: -35vh !important;
+        }
+        .firstSection{
+            min-height: 130vh;
         }
     }
 

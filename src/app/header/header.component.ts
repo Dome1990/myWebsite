@@ -13,7 +13,7 @@ export class HeaderComponent implements OnInit {
 
   resp = false;
   lastY = 0;
-  scrollDown = true;
+  scrollDown = false;
 
   @HostListener('window:scroll', ['$event'])
   onScroll(){
