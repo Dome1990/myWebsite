@@ -1,8 +1,5 @@
 
-<app-header></app-header>
+<app-header [dark]="router.url == '/imprint'" 
+[dark]="router.url == '/privacy'"></app-header>
 <router-outlet></router-outlet>
 <app-footer></app-footer>
-
-<!-- <div class="slideshow-container">
-    <img *ngIf="showImage" class="img-slideshow" src="../assets/img/{{ images[currentImage] }}" alt="">
-</div> -->

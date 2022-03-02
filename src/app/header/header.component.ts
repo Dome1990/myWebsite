@@ -1,4 +1,4 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, HostListener, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -12,6 +12,7 @@ export class HeaderComponent implements OnInit {
   constructor() { }
 
   resp = false;
+  @Input() dark = false;
   lastY = 0;
   scrollDown = false;
 

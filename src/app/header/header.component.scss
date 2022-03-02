@@ -1,4 +1,4 @@
-header{
+header {
     background-color: black;
     width: 100vw;
     max-width: 100%;
@@ -13,27 +13,27 @@ header{
     top: 0;
     z-index: 1;
     animation: showNav 255ms ease-in-out;
-    img{
+    img {
         height: 50px;
         background-color: transparent;
         border-radius: 50%;
     }
-    a{
+    a {
         color: white;
         text-decoration: none;
         font-weight: 400;
         transition: all 150ms ease-in-out;
         margin-left: 60px;
-        &:hover{
-            color: #FA2759;
+        &:hover {
+            color: #fa2759;
         }
     }
-    
-    .homeImgLink{
+
+    .homeImgLink {
         margin: 0;
     }
 
-    .respMenu{
+    .respMenu {
         display: none;
         flex-direction: column;
         align-items: flex-end;
@@ -44,34 +44,39 @@ header{
         height: 133px;
     }
 
-    .linkbox{
+    .linkbox {
         display: flex;
         flex-direction: column;
-        text-align: end;
-        transform: scaleY(0);
+        text-align: start;
         overflow: hidden;
         animation: openLinks 255ms forwards;
+
+        height: 100vh;
+        position: absolute;
+        top: 61px;
+        background-color: rgba(0, 0, 0, 0.8);
+        right: 0;
     }
 
     @keyframes showNav {
-        from{
+        from {
             transform: translateY(-100%);
         }
-        to{
+        to {
             transform: translateY(0);
         }
     }
 
     @keyframes openLinks {
-        from{
-            transform: translateY(-50%);
+        from {
+            transform: translatex(+50%);
         }
-        to{
-            transform: translateY(0);
+        to {
+            transform: translateX(0);
         }
     }
 
-    .hamburger{
+    .hamburger {
         height: 50px;
         width: 35px;
         //border-style: solid;
@@ -81,7 +86,7 @@ header{
         justify-content: center;
         align-items: center;
     }
-    .ham{
+    .ham {
         border-style: solid;
         border-width: 2px;
         margin-top: 16%;
@@ -89,23 +94,40 @@ header{
         width: 100%;
     }
 
-    .hamClose1{
+    .hamClose1 {
         border-bottom-style: solid;
         border-width: 5px;
         margin-top: 18%;
         transform: rotate(45deg);
     }
-    .hamClose2{
+    .hamClose2 {
         border-bottom-style: solid;
         transform: rotate(-45deg);
     }
 }
 
+.darkHamburger {
+    .ham {
+        border-color: black;
+    }
+}
+
+.darkMenu {
+    background-color: white !important;
+    box-shadow: 0 1px 12px 0 #d9bbc2;
+    a {
+        color: black;
+    }
+    .linkbox{
+        background-color: rgba(255, 255, 255, 0.95);
+    }
+}
+
 @media (max-width: 590px) {
-    .respMenu{
+    .respMenu {
         display: flex !important;
     }
-    .links{
+    .links {
         display: none;
     }
 }

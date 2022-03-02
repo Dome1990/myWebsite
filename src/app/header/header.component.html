@@ -1,12 +1,13 @@
-<header *ngIf="!scrollDown">
-    <a class="homeImgLink" href="/#home"><img src="../../assets/img/logo.png" alt=""></a>
+<header *ngIf="!scrollDown" [class.darkMenu]="dark">
+    <a *ngIf="!dark" class="homeImgLink" href="/#home"><img src="../../assets/img/logo.png" alt=""></a>
+    <a *ngIf="dark" class="homeImgLink" href="/#home"><img src="../../assets/img/logodark.png" alt=""></a>
     <div class="links">
         <a href="/#home">HOME</a>
         <a href="/#about">ABOUT</a>
         <a href="/#portfolio">PORTFOLIO</a>
     </div>
 
-    <div class="respMenu">
+    <div [class.darkHamburger]="dark" class="respMenu">
         <div class="hamburger" (click)="openCloseLinks()">
             <div class="ham"></div>
             <div class="ham"></div>
