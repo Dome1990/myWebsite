@@ -8,7 +8,7 @@
     flex-direction: column;
     padding-left: 10%;
     padding-right: 10%;
-    padding-top: 54px;
+    padding-top: 110px;
     box-sizing: border-box;
     img {
         width: 250px;
@@ -75,16 +75,16 @@
 @media (max-width: 1190px) {
     @media (max-height: 650px) {
         .firstSection {
-            min-height: 140vh !important;
+            min-height: 140vh;
             padding-top: 100px;
             button {
-                margin-top: 80px !important;
+                margin-top: 80px;
             }
         }
         .nextSection {
-            bottom: -35vh !important;
+            bottom: -35vh;
         }
-        .firstSection{
+        .firstSection {
             min-height: 130vh;
         }
     }
@@ -118,6 +118,25 @@
     .imgDiv {
         margin-bottom: 20px;
     }
+
+
+    @media (max-height: 1400px) {
+        .firstSection {
+            min-height: 100vh;
+        }
+        .nextSection {
+            bottom: 10vh;
+        }
+    }
+
+    @media (max-height: 930px) {
+        .firstSection {
+            button {
+                margin-top: 30px;
+            }
+        }
+    }
+
     @media (max-height: 770px) {
         .firstSection {
             min-height: 105vh;
@@ -127,6 +146,11 @@
         }
         .nextSection {
             bottom: -10vh;
+        }
+    }
+    @media (max-height: 480px) {
+        .nextSection {
+            bottom: -20vh;
         }
     }
 }
@@ -160,5 +184,128 @@
     }
     .nextSection {
         bottom: 5vh;
+    }
+    @media (max-height: 480px) {
+        .nextSection {
+            bottom: -20vh;
+        }
+    }
+}
+
+@media (max-height: 950px) {
+    .nextSection {
+        bottom: 5vh;
+    }
+}
+
+@media (max-height: 880px) {
+    .nextSection {
+        bottom: 0vh;
+    }
+}
+
+@media (max-height: 810px) {
+    .nextSection {
+        bottom: -10vh;
+    }
+    .firstSection {
+        min-height: 120vh;
+    }
+}
+
+@media (max-height: 750px) {
+    .nextSection {
+        bottom: -20vh;
+    }
+}
+
+@media (max-height: 670px) {
+    .nextSection {
+        bottom: -30vh;
+    }
+    .firstSection {
+        min-height: 140vh;
+    }
+}
+
+@media (max-height: 600px) {
+    .nextSection {
+        bottom: -50vh;
+    }
+    .firstSection {
+        min-height: 150vh;
+    }
+}
+
+@media (max-height: 530px) {
+    .nextSection {
+        bottom: -70vh;
+    }
+    .firstSection {
+        min-height: 180vh;
+    }
+}
+
+@media (max-height: 475px) {
+    .nextSection {
+        bottom: -75vh;
+    }
+    .buttonBox {
+        button {
+            margin-top: 54px;
+        }
+    }
+}
+
+@media (max-height: 440px) {
+    .nextSection {
+        bottom: -80vh;
+    }
+}
+
+@media (max-height: 408px) {
+    .nextSection {
+        bottom: -78vh;
+    }
+    .buttonBox {
+        button {
+            margin-top: 24px;
+        }
+    }
+}
+
+@media (max-height: 400px) {
+    .firstSection{
+        min-height: 200vh;
+    }
+    .nextSection {
+        bottom: -100vh;
+    }
+}
+
+@media (min-width: 1056px) {
+    @media (max-height: 850px) {
+        .firstSection {
+            min-height: 100vh;
+            button {
+                margin-top: 80px;
+            }
+        }
+        .nextSection{
+            bottom: 10vh;
+        }
+    }
+    @media (max-height: 715px) {
+        .nextSection{
+            bottom: 5vh;
+        }
+    }
+    @media (max-height: 600px) {
+        .firstSection{
+            min-height: 120vh;
+        }
+        .nextSection{
+            bottom: -10vh;
+        }
     }
 }
