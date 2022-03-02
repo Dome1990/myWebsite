@@ -61,3 +61,26 @@
         background-color: white;
     }
 }
+@media (min-width: 1410px) {
+    .skills{
+        justify-content: center;
+    }
+    .skill{
+        height: 175px;
+        width: 250px;
+    }
+}
+
+@media (min-width: 1700px) {
+    .skill{
+        height: 200px;
+        width: 300px;
+    }
+}
+
+@media (min-width: 1970px) {
+    .skill{
+        height: 350px;
+        width: 400px;
+    }
+}

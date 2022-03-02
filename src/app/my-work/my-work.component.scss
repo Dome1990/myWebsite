@@ -60,7 +60,7 @@
     .projectDescritpion {
         height: 100%;
         width: 100%;
-        background-color: rgba(255, 255, 255, 0.4);
+        background-color: rgba(255, 255, 255, 0.9);
         color: black;
         position: absolute;
         display: flex;
@@ -77,7 +77,6 @@
     img {
         height: 400px;
         object-fit: cover;
-        //position: relative;
         left: 0px;
         top: -20px;
     }

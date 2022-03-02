@@ -1,5 +1,5 @@
 .firstSection {
-    min-height: 120vh;
+    min-height: 100vh;
     width: 100vw;
     max-width: 100%;
     background-color: black;
@@ -47,6 +47,16 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    animation: slideContent 255ms ease-in-out;
+}
+
+@keyframes slideContent {
+    from {
+        transform: translateX(-20vw);
+    }
+    to {
+        transform: translateX(0);
+    }
 }
 
 .name {
@@ -71,6 +81,42 @@
     }
 }
 
+.outerBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+
+@media (min-width: 1060px) {
+    @media (min-height: 715px) {
+        .firstSection{
+            justify-content: center;
+        }
+    }
+}
+
+@media (min-width: 1600px) {
+    .contentTop {
+        justify-content: space-around;
+    }
+    @media (min-height: 740px) {
+        .outerBox {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+            justify-content: center;
+        }
+    }
+    @media (max-height: 630px) {
+        .nextSection {
+            margin-top: 20px;
+        }
+    }
+}
+
 @media (max-width: 1055px) {
     .contentTop {
         flex-direction: column-reverse;
@@ -86,5 +132,31 @@
     }
     .imgDiv {
         margin-bottom: 20px;
+    }
+    .outerBox {
+        display: block;
+    }
+
+    @media (max-height: 870px) {
+        .nextSection {
+            margin-top: 5%;
+        }
+    }
+    @media (max-height: 795px) {
+        .nextSection {
+            margin-top: 6px;
+        }
+        .firstSection {
+            button {
+                margin-top: 6px;
+            }
+        }
+    }
+}
+@media (max-width: 730px) {
+    @media (min-height: 820px) {
+        .firstSection{
+            justify-content: center;
+        }
     }
 }
