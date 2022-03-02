@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.scss']
 })
 
-export class AppComponent {
+export class AppComponent{
 
   currentRoute = '';
   constructor(public router: Router) { }

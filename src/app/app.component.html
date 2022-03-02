@@ -1,5 +1,5 @@
 
-<app-header [dark]="router.url == '/imprint'" 
-[dark]="router.url == '/privacy'"></app-header>
+<app-header [dark]="router.url == '/imprint' || router.url == '/privacy'"
+></app-header>
 <router-outlet></router-outlet>
 <app-footer></app-footer>
