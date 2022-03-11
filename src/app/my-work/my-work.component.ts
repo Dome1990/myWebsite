@@ -41,6 +41,13 @@ export class MyWorkComponent implements OnInit {
       text : '- made with Angular',
       imgPath : '../../assets/img/projectImg/myWebsite.png',
       projectLink : 'https://dominic-gerth.com/',
+    },
+    {
+      language : 'angular',
+      name : 'Ring of fire',
+      text : 'The popular card game',
+      imgPath : '../../assets/img/projectImg/ringoffire.png',
+      projectLink : 'https://dominic-gerth.com/ringoffire',
     }
   ]
 
