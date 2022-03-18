@@ -47,6 +47,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     animation: slideContent 255ms ease-in-out;
 }
 
@@ -94,6 +95,12 @@
         .firstSection{
             justify-content: center;
         }
+    }
+}
+
+@media (min-width: 1220px) {
+    .imgDiv{
+        transform: scale(1.5);
     }
 }
 
