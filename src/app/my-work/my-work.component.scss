@@ -114,11 +114,11 @@
 
 @media (max-width: 920px) {
     .project-box{
-        width: 100%;
+        width: fit-content;
     }
     .projects {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-}
+} 

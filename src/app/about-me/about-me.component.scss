@@ -29,7 +29,7 @@ span {
 .aboutMeTop {
     display: flex;
     justify-content: space-evenly;
-    min-height: 55vh;
+    padding-bottom: 54px;
     border-bottom-style: solid;
     border-bottom-width: 2px;
     border-bottom-color: #2dfcd8;
@@ -55,7 +55,6 @@ span {
     display: flex;
     flex-direction: column;
     width: 20%;
-    //padding: 6px;
     align-items: center;
     text-align: center;
     .topic {
@@ -68,7 +67,7 @@ span {
         border-radius: 50%;
         padding: 20px;
         height: 44px;
-        width: fit-content;
+        width: 44px;
     }
 }
 
