@@ -56,6 +56,8 @@ export class MyWorkComponent implements OnInit {
 
   javascript = true;
   angular = true;
+  javascriptSel = true;
+  angularSel = true;
   jsShrink = false;
   jsRise = false;
   angShrink = false;
@@ -112,6 +114,8 @@ export class MyWorkComponent implements OnInit {
       this.jsRise = false;
       this.angular = false;
       this.angShrink = false;
+      this.javascriptSel = true;
+      this.angularSel = false;
     }, 255);
   }
 
@@ -121,6 +125,7 @@ export class MyWorkComponent implements OnInit {
       this.jsRise = false;
       this.angular = false;
       this.angShrink = false;
+      this.angularSel = false;
     }, 255);
   }
 
@@ -133,6 +138,8 @@ export class MyWorkComponent implements OnInit {
       this.javascript = false;
       this.jsShrink = false;
       this.angRise = false;
+      this.javascriptSel = false;
+      this.angularSel = true;
     }, 255);
   }
 
@@ -143,6 +150,7 @@ export class MyWorkComponent implements OnInit {
       this.javascript = false;
       this.jsShrink = false;
       this.angRise = false;
+      this.javascriptSel = false;
     }, 255);
   }
 
@@ -154,6 +162,7 @@ export class MyWorkComponent implements OnInit {
       this.angular = true;
       this.jsRise = false;
       this.angRise = false;
+      this.angularSel = true;
     }, 255);
   }
 
@@ -165,6 +174,7 @@ export class MyWorkComponent implements OnInit {
       this.angular = true;
       this.jsRise = false;
       this.angRise = false;
+      this.javascriptSel = true;
     }, 255);
   }
 
