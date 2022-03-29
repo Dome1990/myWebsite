@@ -11,7 +11,7 @@
     </div>
     <div class="projects">
 
-        <div *ngFor="let c of javascriptProject; let i = index;" [class.project-box]="javascript">
+        <div *ngFor="let c of javascriptProject; let i = index;" [class.project-box]="javascript" [class.shrink]="jsShrink" [class.rise]="jsRise">
             <div *ngIf="javascript" class="project">
                 <img src="{{ javascriptProject[i].imgPath }}">
                 <div class="projectDescritpion">
@@ -21,7 +21,7 @@
             </div>
         </div>
 
-        <div *ngFor="let c of angularProject; let i = index;" [class.project-box]="angular">
+        <div *ngFor="let c of angularProject; let i = index;" [class.project-box]="angular" [class.shrink]="angShrink" [class.rise]="angRise">
             <div *ngIf="angular" class="project">
                 <img src="{{ angularProject[i].imgPath }}">
                 <div class="projectDescritpion">

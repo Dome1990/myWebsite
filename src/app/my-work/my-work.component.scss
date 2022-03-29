@@ -1,89 +1,129 @@
 .myWork {
-    min-height: 100vh;
-    width: 100vw;
-    max-width: 100%;
+    min-height      : 100vh;
+    width           : 100vw;
+    max-width       : 100%;
     background-color: black;
-    box-sizing: border-box;
-    padding: 55px 10% 55px 10%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    box-sizing      : border-box;
+    padding         : 55px 10% 55px 10%;
+    display         : flex;
+    flex-direction  : column;
+    align-items     : center;
 }
 
 .selectionBar {
-    width: 100%;
-    display: flex;
+    width          : 100%;
+    display        : flex;
     justify-content: center;
-    margin: 50px 0 50px 0;
+    margin         : 50px 0 50px 0;
 }
 
 .selectBtn {
-    border-style: solid;
-    border-color: #fa2759;
-    border-width: 1px;
-    font-weight: 600;
-    color: #fa2759;
-    padding: 8px 12px 8px 12px;
+    border-style    : solid;
+    border-color    : #fa2759;
+    border-width    : 1px;
+    font-weight     : 600;
+    color           : #fa2759;
+    padding         : 8px 12px 8px 12px;
     background-color: transparent;
-    cursor: pointer;
-    transition: all 255ms;
-    margin-right: 12px;
+    cursor          : pointer;
+    transition      : all 255ms;
+    margin-right    : 12px;
 }
 
 .selected {
-    color: white;
+    color           : white;
     background-color: #fa2759;
 }
 
 .projects {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 16px;
+    width          : 100%;
+    display        : flex;
+    flex-wrap      : wrap;
+    align-items    : center;
+    margin         : 16px;
     justify-content: center;
 }
 
-.project-box{
-    height: 350px;
-    width: 40%;
-    margin: 24px;
-    overflow: hidden;
+.project-box {
+    height    : 350px;
+    width     : 40%;
+    margin    : 24px;
+    overflow  : hidden;
+    transition: all 255ms ease-in-out;
+}
+
+.shrink {
+    animation: shrink 255ms ease-in-out;
+}
+
+@keyframes shrink {
+    from {
+        height: 350px;
+        width : 40%;
+        margin: 24px;
+    }
+    to{
+        width: 0;
+        margin: 0;
+    }
+}
+
+.rise {
+    animation: rise 255ms ease-in-out;
+}
+
+@keyframes rise {
+    from {
+        height : 350px;
+        width  : 0;
+        margin : 0;
+    }
+
+    to {
+        height  : 350px;
+        width   : 40%;
+        margin  : 24px;
+        overflow: hidden;
+    }
 }
 
 .project {
-    height: 100%;
-    width: 100%;
+    height  : 100%;
+    width   : 100%;
     overflow: hidden;
     position: relative;
-    display: flex;
+    display : flex;
+
     &:hover {
         .projectDescritpion {
-            animation: showInfo 255ms;
+            animation          : showInfo 255ms;
             animation-fill-mode: forwards;
         }
     }
+
     .projectDescritpion {
-        height: 100%;
-        width: 100%;
+        height          : 100%;
+        width           : 100%;
         background-color: rgba(255, 255, 255, 0.9);
-        color: black;
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        transform: scaleY(0);
+        color           : black;
+        position        : absolute;
+        display         : flex;
+        flex-direction  : column;
+        align-items     : center;
+        text-align      : center;
+        justify-content : center;
+        transform       : scaleY(0);
+
         span {
             font-weight: 700;
-            color: #fa2759;
+            color      : #fa2759;
         }
     }
+
     img {
         object-fit: cover;
-        width: 100%;
-        }
+        width     : 100%;
+    }
 }
 
 @keyframes showInfo {
@@ -96,29 +136,62 @@
 }
 
 .tryOut {
-    border-style: solid;
-    border-color: #fa2759;
-    border-width: 1px;
-    font-weight: 600;
-    color: #fa2759;
-    padding: 8px 12px 8px 12px;
+    border-style    : solid;
+    border-color    : #fa2759;
+    border-width    : 1px;
+    font-weight     : 600;
+    color           : #fa2759;
+    padding         : 8px 12px 8px 12px;
     background-color: white;
-    cursor: pointer;
-    transition: all 255ms;
-    margin-top: 30px;
+    cursor          : pointer;
+    transition      : all 255ms;
+    margin-top      : 30px;
+
     &:hover {
-        color: white;
+        color           : white;
         background-color: #fa2759;
     }
 }
 
+
 @media (max-width: 920px) {
-    .project-box{
+    .project-box {
         width: fit-content;
     }
-    .projects {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+
+    .rise {
+        animation: rise 255ms ease-in-out;
     }
-} 
+
+    @keyframes rise {
+        from {
+            width: 0;
+            height: 0;
+        }
+        to {
+            width: fit-content;
+            height: 350px;
+        }
+    }
+
+    .shrink {
+        animation: shrink 255ms ease-in-out;
+    }
+    
+    @keyframes shrink {
+        from {
+            width: fit-content;
+            height: 350px;
+        }
+        to{
+            width: 0;
+            height: 0;
+        }
+    }
+
+    .projects {
+        flex-direction : column;
+        justify-content: center;
+        align-items    : center;
+    }
+}
