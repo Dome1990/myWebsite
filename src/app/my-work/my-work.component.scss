@@ -57,7 +57,7 @@
 }
 
 @keyframes shrink {
-    from {
+/*     from {
         height: 350px;
         width : 40%;
         margin: 24px;
@@ -65,6 +65,12 @@
     to{
         width: 0;
         margin: 0;
+    } */
+    from{
+        transform: scaleX(1);
+    }
+    to{
+        transform: scaleX(0);
     }
 }
 
@@ -73,7 +79,7 @@
 }
 
 @keyframes rise {
-    from {
+/*     from {
         height : 350px;
         width  : 0;
         margin : 0;
@@ -84,6 +90,12 @@
         width   : 40%;
         margin  : 24px;
         overflow: hidden;
+    } */
+    from{
+        transform: scaleX(0);
+    }
+    to{
+        transform: scaleX(1);
     }
 }
 
@@ -159,18 +171,24 @@
         width: fit-content;
     }
 
-    .rise {
+      .rise {
         animation: rise 255ms ease-in-out;
     }
 
     @keyframes rise {
-        from {
+/*         from {
             width: 0;
             height: 0;
         }
         to {
             width: fit-content;
             height: 350px;
+        } */
+        from{
+            transform: scaleY(0);
+        }
+        to{
+            transform: scaleY(1);
         }
     }
 
@@ -179,13 +197,19 @@
     }
     
     @keyframes shrink {
-        from {
+ /*        from {
             width: fit-content;
             height: 350px;
         }
         to{
             width: 0;
             height: 0;
+        } */
+        from{
+            transform: scaleY(1);
+        }
+        to{
+            transform: scaleY(0);
         }
     }
 

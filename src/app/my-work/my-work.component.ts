@@ -104,7 +104,7 @@ export class MyWorkComponent implements OnInit {
     }
   };
 
-  setJSfromAng(){
+  setJSfromAng() {
     this.javascript = true;
     this.jsRise = true;
     this.angShrink = true;
@@ -115,7 +115,7 @@ export class MyWorkComponent implements OnInit {
     }, 255);
   }
 
-  setJSfromAll(){
+  setJSfromAll() {
     this.angShrink = true;
     setTimeout(() => {
       this.jsRise = false;
@@ -124,7 +124,7 @@ export class MyWorkComponent implements OnInit {
     }, 255);
   }
 
-  setAngfromJS(){
+  setAngfromJS() {
     this.angular = true;
     this.angRise = true;
     this.jsShrink = true;
@@ -136,7 +136,7 @@ export class MyWorkComponent implements OnInit {
     }, 255);
   }
 
-  setAngfromAll(){
+  setAngfromAll() {
     this.jsShrink = true;
     setTimeout(() => {
       this.angular = true;
@@ -146,7 +146,7 @@ export class MyWorkComponent implements OnInit {
     }, 255);
   }
 
-  setAllfromJS(){
+  setAllfromJS() {
     this.angular = true;
     this.angRise = true;
     setTimeout(() => {
@@ -157,7 +157,7 @@ export class MyWorkComponent implements OnInit {
     }, 255);
   }
 
-  setAllfromAng(){
+  setAllfromAng() {
     this.javascript = true;
     this.jsRise = true;
     setTimeout(() => {
