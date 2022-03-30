@@ -19,7 +19,6 @@ export class HeaderComponent implements OnInit {
   @HostListener('window:scroll', ['$event'])
   onScroll(){
     if(window.pageYOffset > this.lastY){
-      console.log('scrolldown');
       this.scrollDown = true;
     }
     else if(window.pageYOffset < this.lastY){

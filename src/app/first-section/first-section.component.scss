@@ -49,16 +49,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    animation: slideContent 255ms ease-in-out;
+    opacity: 1;
 }
 
-@keyframes slideContent {
-    from {
-        transform: translateX(-20vw);
-    }
-    to {
-        transform: translateX(0);
-    }
+.invisible{
+    opacity: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .name {

@@ -7,9 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FirstSectionComponent implements OnInit {
 
+  /**
+   * the headline and profilepicture are invisible (opacity: 0;)
+   */
+  top = ['invisible'];
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  /**
+   * is executed, when the picture is load and changes the classlist to start an fade in animation
+   */
+  fadeIn(){
+    this.top = ['contentTop', 'fadeIn'];
   }
 
 }
