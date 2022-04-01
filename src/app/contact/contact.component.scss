@@ -16,12 +16,12 @@
     width: 80%;
     margin-top: 54px;
     margin-bottom: 54px;
+    word-break: break-word;
     h2 {
         padding-bottom: 24px;
         color: #2dfcd8;
     }
     span {
-        word-break: normal;
         a {
             color: #2dfcd8;
             text-decoration: none;
@@ -87,13 +87,5 @@
 @media (max-width: 1100px) {
     .contant {
         width: 100%;
-    }
-}
-
-@media (max-width: 400px) {
-    span {
-        a {
-            word-break: break-all !important;
-        }
     }
 }

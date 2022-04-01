@@ -39,17 +39,30 @@ export class AboutMeComponent implements OnInit {
   }
 
   checkElement(skill: any) {
+
+    console.log('top '+skill[0].nativeElement.getBoundingClientRect().top);
+    console.log('bottom '+skill[0].nativeElement.getBoundingClientRect().bottom);
+    /* console.log(skill[0].nativeElement.getBoundingClientRect()); */
+    console.log(skill[0].nativeElement.getBoundingClientRect().bottom - window.innerHeight);
+    console.log('window inner height '+ window.innerHeight);
     for (let i = 0; i < skill.length; i++) {
       if (skill[i]) {
         const rect = skill[i].nativeElement.getBoundingClientRect();
         const topShown = rect.top >= 0;
         const bottomShown = rect.bottom <= window.innerHeight;
         this.isMySkillsScrolledIntoView = topShown && bottomShown;
-        if (this.isMySkillsScrolledIntoView) {
+         if(this.rectToBig(rect, topShown)){
+          skill[i].nativeElement.classList.add('seen');
+        }
+        else if (this.isMySkillsScrolledIntoView) {
           skill[i].nativeElement.classList.add('seen');
         }
       }
     }
   }
 
+rectToBig(rect:any, topShown:any){
+  return rect.height >= window.innerHeight && topShown && rect.bottom - window.innerHeight <= 100;
 }
+}
+
