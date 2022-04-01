@@ -28,6 +28,10 @@
     cursor          : pointer;
     transition      : all 255ms;
     margin-right    : 12px;
+    &:hover{
+        color           : white;
+        background-color: #fa2759;
+    }
 }
 
 .selected {
