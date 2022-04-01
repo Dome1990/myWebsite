@@ -48,11 +48,14 @@ header {
         display: flex;
         flex-direction: column;
         text-align: start;
+        align-items: flex-end;
         overflow: hidden;
         animation: openLinks 255ms forwards;
         height: 100vh;
         position: absolute;
-        top: 61px;
+        top: 58px;
+        right: 0;
+        padding-right: 32px;
         background-color: rgba(0, 0, 0, 0.8);
         a{
             padding-top: 44px;

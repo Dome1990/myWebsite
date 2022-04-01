@@ -14,7 +14,7 @@ export class MyWorkComponent implements OnInit {
     {
       language: 'javascript',
       name: 'El Pollo Loco',
-      text: 'JavaScript -based jump and run.',
+      text: 'JavaScript -based jump and run game',
       imgPath: '../../assets/img/projectImg/elpolloloco.png',
       projectLink: 'https://dominic-gerth.com/ElPolloLoco/',
     },

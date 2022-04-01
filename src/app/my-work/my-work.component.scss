@@ -83,18 +83,6 @@
 }
 
 @keyframes rise {
-/*     from {
-        height : 350px;
-        width  : 0;
-        margin : 0;
-    }
-
-    to {
-        height  : 350px;
-        width   : 40%;
-        margin  : 24px;
-        overflow: hidden;
-    } */
     from{
         transform: scaleX(0);
     }
@@ -180,14 +168,6 @@
     }
 
     @keyframes rise {
-/*         from {
-            width: 0;
-            height: 0;
-        }
-        to {
-            width: fit-content;
-            height: 350px;
-        } */
         from{
             transform: scaleY(0);
         }
@@ -201,14 +181,6 @@
     }
     
     @keyframes shrink {
- /*        from {
-            width: fit-content;
-            height: 350px;
-        }
-        to{
-            width: 0;
-            height: 0;
-        } */
         from{
             transform: scaleY(1);
         }
@@ -221,5 +193,14 @@
         flex-direction : column;
         justify-content: center;
         align-items    : center;
+    }
+}
+
+@media (max-width: 480px){
+    .selectionBar{
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 170px;
+        text-align: center;
     }
 }

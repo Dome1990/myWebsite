@@ -27,6 +27,9 @@ export class AboutMeComponent implements OnInit {
   private motivation4!: ElementRef<HTMLDivElement>;
 
   @HostListener('window:scroll', ['$event'])
+  /**
+   * check if the element is scalled into view
+   */
   isScrolledIntoView() {
     const skill = [
       this.aboutMe,
@@ -38,6 +41,10 @@ export class AboutMeComponent implements OnInit {
     this.checkElement(skill);
   }
 
+  /**
+   * check if the element is in screen
+   * @param skill array of elements that we want to check
+   */
   checkElement(skill: any) {
     for (let i = 0; i < skill.length; i++) {
       if (skill[i]) {
@@ -55,8 +62,14 @@ export class AboutMeComponent implements OnInit {
     }
   }
 
+  /**
+   * check if the div height is bigger than the height of the window && in view
+   * @param rect skill[i].nativeElement.getBoundingClientRect() -- params of the div to check
+   * @param topShown rect.top >= 0 -- is the top of the div already in the viewport?
+   * @returns boolean
+   */
   rectToBig(rect: any, topShown: any) {
-    return rect.height >= window.innerHeight && topShown && rect.bottom - window.innerHeight <= 100;
+    return rect.height >= window.innerHeight && topShown && rect.bottom - window.innerHeight <= 300;
   }
 }
 
