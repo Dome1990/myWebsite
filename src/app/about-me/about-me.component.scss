@@ -10,6 +10,7 @@
     padding-top: 54px;
     box-sizing: border-box;
 }
+
 .imgDiv {
     width: 250px;
     height: 250px;
@@ -17,7 +18,8 @@
     border-radius: 50%;
     margin-right: 6px;
     display: flex;
-    img{
+
+    img {
         object-fit: cover;
     }
 }
@@ -34,9 +36,11 @@ span {
     border-bottom-width: 2px;
     border-bottom-color: #2dfcd8;
     align-items: center;
+
     h2 {
         margin-bottom: 40px;
     }
+
     .aboutDescription {
         display: flex;
         flex-direction: column;
@@ -46,16 +50,17 @@ span {
     }
 }
 
-.seen{
+.seen {
     opacity: 1 !important;
     animation: seen 255ms ease-in-out;
 }
 
 @keyframes seen {
-    from{
+    from {
         opacity: 0;
     }
-    to{
+
+    to {
         opacity: 1;
     }
 }
@@ -74,11 +79,13 @@ span {
     width: 20%;
     align-items: center;
     text-align: center;
+
     .topic {
-        margin-bottom: 24px;
-        margin-top: 24px;
+        margin: 24px 0px 24px 0px;
+        height: 50px;
         font-size: 22px;
     }
+
     img {
         background-color: #2dfcd8;
         border-radius: 50%;
@@ -95,31 +102,46 @@ span {
             padding-bottom: 54px;
         }
     }
+
     @media (max-height:500px) {
-        .aboutMeTop{
+        .aboutMeTop {
             min-height: fit-content;
             padding-bottom: 50px;
         }
-        
+
+    }
+}
+
+@media (max-width: 1730px) {
+    .topic {
+        height: 71px !important;
     }
 }
 
 @media (max-width: 940px) {
+    .topic {
+        height: fit-content !important;
+    }
+
     .imgDiv {
         margin-bottom: 32px;
     }
+
     .aboutMeTop {
         flex-direction: column;
         align-items: center;
         padding-bottom: 24px;
         width: 100%;
     }
+
     .aboutDescription {
         width: 100% !important;
     }
+
     .motivation {
         flex-direction: column;
     }
+
     .aboutMeDetail {
         width: 100%;
         padding-bottom: 32px;
@@ -130,6 +152,7 @@ span {
     .imgDiv {
         width: 230px;
         height: 230px;
+
         img {
             width: 230px;
         }
